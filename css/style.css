@@ -1,0 +1,639 @@
+/* header and body css starts */
+.logo{
+    width:20%;
+}
+.logo img{
+    width:125px;
+}
+.nav-menu{
+    width:100%;
+}
+.custom-container{
+    max-width:55%;
+}
+.form-bg{
+    background: #F4F2F8 0% 0% no-repeat padding-box;
+    padding: 15px;
+}
+.main-heading{
+    font-size: 25px;
+    font-weight: bold;
+}
+.header-wrapper{
+    background-color: #204555;
+    color:white;
+    height:40px;
+    padding:8px;
+}
+.header-wrapper p{
+    margin-bottom:0px;
+}
+.header-wrapper a{
+    color:white;
+}
+.header-wrapper a:hover{
+    text-decoration: none;
+}
+.header-wrapper i{
+    margin-right:5px;
+}
+.nav-wrapper nav{
+    padding:10px;
+    background-color:#131E29;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.nav-menu .main-nav-item{
+    margin-right:25px;
+}
+.nav-menu .main-nav-item > a{
+    font-family: helvetica;
+    font-weight: 600;
+    font-size: 16px !important;
+    color:white !important;
+    position:relative;
+    padding-top: 26px;
+    padding-bottom: 26px;
+}
+.nav-menu .main-nav-item > a::after{
+    content: '';
+    height: 2px;
+    background: #ff4713;
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    right: 100%;
+    transition: right 0.4s ease;
+}
+.nav-menu .main-nav-item > a:hover::after{
+    right:0;
+}
+.main-nav-item:hover .sub-menu{
+    display: block;
+}
+.sub-menu{
+    display: none;
+    width: 100%;
+    margin-top: -6px;
+    border-radius: 0px;
+    height: 80%;
+    padding:0px;
+}
+.sub-menu li{
+    display: inline-block;
+    height: 100%;
+    line-height: 30px;
+}
+.sub-menu li:hover{
+    background-color: #eee;
+}
+.sub-menu li a{
+    padding: 0px 27px;
+    color: #0a493e !important;
+    font-size: 14px !important;
+    font-weight: 700;
+}
+.sub-menu li a:hover{
+    text-decoration: none;
+    cursor: pointer;
+}
+.sub-menu-container{
+    width: 100%;
+    margin: 0px 0px;
+    text-align: center;
+    padding-top:10px;
+}
+.toggle-button{
+    background-color: #009688;
+}
+.buy-now-btn button,
+.lookup-btn button,
+.final button{
+    background-color: #ff4713;
+    border: none;
+    width: 150px;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 500;
+    border: 2px solid #ff4713;
+    margin-top:15px;
+}
+.final .reset{
+    background-color: transparent;
+    color:#ff4713;
+}
+.body-wrapper{
+    padding:20px 0px;
+}
+.star{
+    margin-left:2px;
+}
+.lookup-btn button{
+    margin-top: 30px;
+    width: 88px !important;
+    height: 35px;
+    line-height: 15px;
+}
+.banner-wrapper{
+    background-image: url('../images/banner.png');
+    background-size: cover;
+    height: 230px;
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.banner-text{
+    font-size: 50px;
+    position: absolute;
+    color: white;
+    transform: translate(0px, 100%);
+    font-weight: 200;
+}
+.banner-text-small{
+    position: absolute;
+    color: white;
+    top: 40%;
+}
+.body-wrapper .form-group input, .body-wrapper .form-group select {
+    height: 35px !important;
+    color: #494d56;
+    border: 1px solid #fff!important;
+    border-radius: 3px;
+}
+.body-wrapper .form-group textarea {
+    color: #494d56;
+    border: 1px solid #fff;
+    border-radius: 3px;
+}
+/* header and body css ends */
+
+/* Custom radio button css starts */
+.body-wrapper .custom-radio-btn {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkmark {
+    position: absolute;
+    top: 3px;
+    left: 13px;
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
+    background-color: #fff;
+}
+.body-wrapper .custom-radio-btn:checked ~ .checkmark {
+    background-color: #ff4713;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+.body-wrapper .custom-radio-btn:checked ~ .checkmark:after {
+    display: block;
+}
+.body-wrapper .checkmark:after {
+    top: 5px;
+    left: 5px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+.body-wrapper .label_pref{
+    margin-left:30px;
+}
+.body-wrapper .form-group label{
+    font-weight: normal;
+    font-size: 15px;
+    margin-top:10px;
+}
+
+/* custom radio button css ends */
+
+/* custom checkbox css starts */
+.container-chkbox {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size:14px;
+    margin-top:20px;
+  }
+  
+  .container-chkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark-chk {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #fff;
+    border-radius:3px;
+  }
+
+  .container-chkbox input:checked ~ .checkmark-chk {
+    background-color: #ff4713;
+  }
+  
+  .checkmark-chk::after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  .container-chkbox input:checked ~ .checkmark-chk:after {
+    display: block;
+  }
+  
+  .container-chkbox .checkmark-chk::after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/* custom checkbox css ends */
+
+
+/* footer css starts */
+
+.social-media{
+    background-color: #d6d1ca;
+    padding:10px;
+    height:55px;
+}
+
+.inner-social ul{
+    list-style-type: none;
+}
+.inner-social li{
+    background-image: url(../images/social-icons.png);
+    background-size: 159px 37px;
+    background-repeat: no-repeat;
+    height: 35px;
+    position: absolute;
+    left: 42%;
+    top:0;
+}
+.inner-social .twitter{
+    width: 40px;  
+}
+.inner-social .facebook{
+    width: 80px;
+}
+.inner-social .instagram{
+    width: 120px;
+}
+.main-foot{
+    background-color: #204555;
+    padding:30px;
+}
+.footer-links{
+    list-style-type:none;
+    padding-left:0px;
+}
+.footer-links li:first-child{
+    padding-bottom:20px;
+}
+.footer-links li{
+    padding-bottom:10px;
+}
+.footer-links li a{
+    color: #e2f5e9;
+    font-size:14px;
+    position:relative;
+}
+.footer-links li a:hover{
+    text-decoration: none;
+}
+.footer-links li a::before{
+    content: '';
+    height: 1px;
+    background: #fff;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 100%;
+    transition: right 0.4s ease;
+}
+.footer-links li a:hover::before{
+    right:0px;
+}
+.footer-links li:first-child a:hover::before{
+    right:100% !important;
+}
+.footer-links li:first-child a{
+    font-weight: 600;
+    color:white;
+    font-size: 16px;
+}
+.end-foot{
+    color: white;
+    background-color: #131E29;
+    font-size: 14px;
+    padding: 15px;
+    text-align: center;
+}
+.end-foot p{
+    margin-bottom:0px;
+}
+/* footer css ends */
+
+
+/* Message Rec page css starts */
+.success{
+    background-color: rgb(226,244,233);
+    padding: 20px;
+    min-height: 230px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.success i{
+    color: rgb(6,188,77);
+    font-size:55px;
+}
+.success h2{
+    font-size: 27px;
+    font-family: arial;
+    font-weight: 600;
+    color: #565758;
+}
+.success-msg{
+    width: 75%;
+    margin: 0 auto;
+    font-size: 21px;
+    margin-top: 20px;
+    font-family: arial;
+    text-align: center;
+}
+.go-to-home button{
+    background-color: #ff4713;
+    border: none;
+    width: 190px;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: 500;
+}
+/* Message Rec page css ends */
+
+/* complaint page css starts */
+.make-complaint{
+    background-color:rgb(213,209,202);
+    min-height:340px;
+    padding:10px;
+}
+.make-complaint select{
+    height:47px;
+    padding:10px 0px;
+}
+.make-complaint select option{
+    border-bottom:1px solid #ccc;
+    padding:10px;
+    background-color:rgb(244,248,250);
+}
+.make-complaint select option:active{
+    background-color:red;
+}
+.compl-type{
+    font-size: 15px;
+    font-weight: 400;
+    color: grey;
+    height: 45px;
+    visibility:hidden;
+}
+.buttons-div{
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 23px;
+}
+.btn-blue{
+    background-color: rgb(31,69,85);
+    border-radius: 8px;
+    color: white;
+    width: 98%;
+    height: 44px;
+    font-weight: 500;
+    font-size: 15px;
+}
+.btn-blue:hover{
+    color:White;
+}
+
+/* Custom scroll and selectbox css starts */
+.ui-selectmenu-menu{
+    height: 160px;
+    overflow-y: auto;
+    width: 474px;
+  }
+  .mCSB_container{
+      position:absolute !important;
+  }
+  #number-button{
+      height: 45px;
+    border-radius: 6px;
+    line-height: 30px;
+    width: 90%;
+    margin-left:-11px;
+    background-color:white;
+  }
+  .mCSB_dragger_bar{
+    background-color: #ccc !important;
+    width: 6px !important;
+    height:75px !important;
+  }
+  .mCSB_draggerRail{
+      background-color:transparent !important;
+  }
+  .mCSB_buttonUp,
+  .mCSB_buttonDown{
+      display:none !important;
+  }
+  .ui-selectmenu-icon.ui-icon {
+    margin-top: 7px !important;
+}
+
+.ui-menu .ui-menu-item{
+   border-bottom: 1px solid #ccc;
+   height:40px;
+   background-color:rgb(244,248,250);
+}
+.ui-menu .ui-menu-item div.ui-state-active{
+    height:40px;
+}
+
+.ui-button .ui-icon {
+    border: solid black;
+    border-width: 0 1px 1px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 4px;
+    height: 4px;
+}
+/* custom scrollbar and select css ends */
+
+/* complaint page css ends */
+
+/* help page css starts */
+
+.blue-box{
+    background-color:rgb(31,69,85);
+    color:white;
+    min-height:200px;
+    width: 100%;
+    padding: 15px;
+    margin-bottom:10px;
+}
+.head-text{
+    align-items: center;
+    margin-top:20px;
+}
+.head-text p{
+    font-size: 23px;
+    font-weight: 500;
+}
+.learn-text{
+    position: absolute;
+    bottom:0px;
+}
+.arrow-right{
+    bottom: 0px;
+    position: absolute;
+    right: 30px;}
+
+/* help page css ends */
+
+
+
+/* media query starts */
+@media screen and (max-width:767px){
+    .buttons-div{
+        width: 98%;
+    }
+    .btn-blue{
+        margin-bottom:10px;
+        font-size: 14px;
+    }
+    .ui-selectmenu-menu{
+        width: 441px;
+    }
+    .main-heading{
+        font-size:25px;
+    }
+    .sub-menu{
+        height: 130px;
+        overflow: auto;
+        border:none;
+    }
+    .sub-menu li{
+        display: block;
+    }
+    .sub-menu-container{
+        text-align: left;
+    }
+    .nav-menu .main-nav-item > a:hover::after{
+        right:100%;
+    }
+    .nav-menu .main-nav-item > a{
+        padding-top:15px;
+        padding-bottom:8px;
+    }
+    .banner-text{
+        font-size:40px;
+    }
+    .banner-text-small{
+        font-size: 12px;
+        top:33%;
+    }
+    .custom-container{
+        max-width: 90%;
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    .buttons-div{
+        width: 100%;
+    }
+    .btn-blue{
+        margin-bottom:10px;
+        font-size: 13px;
+        width:100%;
+    }
+    .ui-selectmenu-menu{
+        width: 392px;
+    }
+    .main-heading{
+        font-size:25px;
+    }
+    .banner-text{
+        font-size:48px;
+    }
+    .banner-text-small{
+        font-size: 14px;
+        top:38%;
+    }
+    .custom-container{
+        max-width: 85%;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1200px){
+    .buttons-div{
+        width: 93%;
+    }
+    .btn-blue{
+        margin-bottom:10px;
+        font-size: 14px;
+        width:98%;
+    }
+    .ui-selectmenu-menu{
+        width: 388px;
+    }
+    .nav-menu .main-nav-item {
+        margin-right: 10px;
+    }
+    .banner-text{
+        font-size:55px;
+    }
+    .banner-text-small{
+        font-size: 17px;
+        top:43%;
+    }
+    .custom-container{
+        max-width: 65%;
+    }
+}
+
+/* media query ends */
+
+
+
+
+
+
+  
+  
+
+  
